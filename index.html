@@ -13,31 +13,30 @@
 </head>
 
 <body>
-    <header>
-        <div class="header">
-
-            <a href="#" class="logo">Wills Hotel</a>
-            <nav class="navbar" onclick="myFunction(this)">
-                <span class="bar1"></span>
-                <span class="bar2"></span>
-                <span class="bar3"></span>
-            </nav>
+    <header class="header">
+        <a href="index.html" class="logo">Wills Hotel</a>
+        <div class="navigation">
+            <div id="myNav" class="overlay mobile">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html" class="menu-link">Home</a>
+                    <a href="about.html" class="menu-link1">About Us</a>
+                    <a href="rooms.html" class="menu-link2">Rooms</a></li>
+                </div>
+            </div>
+            <span onclick="openNav()" class="mobile">&#9776;</span>
+        </div>
+        <nav class="nav">
             <ul class="desktop">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="rooms.html">Rooms</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </div>
-        <nav>
-            <ul class="navbar-list">
-                <li><a href="index.html">Home</a></li>
                 <li><a href="rooms.html">Rooms</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- header Section -->
+
     <section class="home">
         <div class="hero">
             <h1><span>Wills</span> A Luxury Hotel</h1>
@@ -45,13 +44,13 @@
                 and facilitate people from different cultures both locally and all over the globe.
             </p>
         </div>
-        <div class="booking">
+        <!-- <div class="booking">
             <h2>Booking Your Hotel</h2>
             <form action="#" class="form">
                 <label for="date-in">Check In:</label>
-                <input type="text">
-                <label for="date-in">Check In:</label>
-                <input type="text">
+                <input type="date">
+                <label for="date-in">Check Out:</label>
+                <input type="date">
                 <div class="select">
                     <label for="guest">Guests:</label>
                     <select id="guest">
@@ -66,91 +65,81 @@
                 </div>
                 <button type="button" class="button">CHECK AVAILABILITY</button>
             </form>
-        </div>
-    </section>
-    <section class="about-section">
-        <div class="about">
-            <small>ABOUT US</small>
-            <h1>Intercontinental <br> Lake Hotel</h1>
-            <p>At Wills Hotel, we accommodate people from the whole corners of the wolrd.Everyday we prepare to receive
-                and facilitate people from different cultures both locally and all over the globe.
-            </p>
-            <p>This has encouraged us to put in all the neccesary effort so as to provide services beyond our
-                customers' expectations hence becoming the most visited and preferred hotel in Uganda.</p>
-
-        </div>
-        <img src="images/interior1.jpg" alt="interior-image">
-        <img src="images/interior2.jpg" alt="interior-image">
-    </section>
-    <section class="work">
-        <small>WHAT WE DO</small>
-        <h1>Discover Our Services</h1>
-    </section>
-    <!-- Dynamic Section -->
-    <section class="services">
-        <!-- <div class="services-item">
-            <i class="fa-solid fa-square-parking"></i>
-            <h2>Travel Plan</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna.</p>
-        </div>
-        <div class="services-item">
-            <i class="fa-solid fa-utensils"></i>
-            <h2>Catering Service</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna.</p>
-        </div>
-        <div class="services-item">
-            <i class="fa-solid fa-bed"></i>
-            <h2>Babysitting</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna.</p>
-        </div>
-        <div class="services-item">
-            <i class="fa-solid fa-shirt"></i>
-            <h2>Laundry</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna.</p>
-        </div>
-        <div class="services-item">
-            <i class="fa-solid fa-car"></i>
-            <h2>Hire Driver</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna.</p>
-        </div>
-        <div class="services-item">
-            <i class="fa-solid fa-martini-glass"></i>
-            <h2>Bar & Drink</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna.</p>
         </div> -->
     </section>
-    <section class="Room-section">
-        <div class="Room1">
-            <div class="price">
-                <h1>Double Rooms</h1>
-                <h3><span>199$</span>/Pernight</h3>
+
+
+    <!-- <div class="trial">
+        <img src="images/bar1.jpg" alt="">
+        <div>
+            <h2>Travel Plan</h2>
+            <h3>Lorem ipsum dolor sit amet,</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna.</p>
+        </div>
+    </div> -->
+    <section class="background">
+        <h1>Our Rooms</h1>
+        <hr>
+        <div class="Room-section">
+            <div class="Room1">
+                <div class="price">
+                    <h1>Double Rooms</h1>
+                    <h3><span>199$</span>/Pernight</h3>
+                </div>
+            </div>
+            <div class="Room2">
+                <div class="price">
+                    <h1>Premium King Room</h1>
+                    <h3><span>159$</span>/Pernight</h3>
+                </div>
+            </div>
+            <div class="Room3">
+                <div class="price">
+                    <h1>Deluxe Room</h1>
+                    <h3><span>198$</span>/Pernight</h3>
+                </div>
+            </div>
+            <div class="Room4">
+                <div class="price">
+                    <h1>Family Room</h1>
+                    <h3><span>299$</span>/Pernight</h3>
+                </div>
             </div>
         </div>
-        <div class="Room2">
-            <div class="price">
-                <h1>Premium King Room</h1>
-                <h3><span>159$</span>/Pernight</h3>
-            </div>
+        <h2><a href="#">See More Rooms</a></h2>
+    </section>
+    <section class="work">
+        <h1>Our Services</h1>
+        <hr>
+    </section>
+    <!-- Dynamic Section -->
+    <section class="services-section">
+        <div class="services">
+            <!-- <div class="container">
+                <img src="images/car.jpg" alt="">
+                <div class="services-item">
+                    <h2>Hire Driver</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna.</p>
+                </div>
+            </div> -->
         </div>
-        <div class="Room3">
-            <div class="price">
-                <h1>Deluxe Room</h1>
-                <h3><span>198$</span>/Pernight</h3>
-            </div>
-        </div>
-        <div class="Room4">
-            <div class="price">
-                <h1>Family Room</h1>
-                <h3><span>299$</span>/Pernight</h3>
-            </div>
+
+        <button type="button" class="seeMore">more</button>
+    </section>
+    <section class="sponser">
+        <h1>Our Sponsors and Partners</h1>
+        <hr>
+        <div class="sponser-image">
+            <a href=""><img src="https://promzzykoncepts.github.io/NFT-Conference/images/coinbase.svg" alt=""></a>
+            <a href=""><img src="https://promzzykoncepts.github.io/NFT-Conference/images/binance-Logo.png" alt=""></a>
+            <a href=""><img src="https://promzzykoncepts.github.io/NFT-Conference/images/Flow.png" alt=""></a>
+            <a href=""><img src="https://promzzykoncepts.github.io/NFT-Conference/images/moonpaymain.svg" alt=""></a>
         </div>
     </section>
+
     <section class="contact-section" id="Contact">
         <div class="contact-div">
 
