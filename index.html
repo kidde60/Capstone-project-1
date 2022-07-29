@@ -6,131 +6,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/fcfd1041d5.js" crossorigin="anonymous">
     </script>
+
     <link rel="stylesheet" href="style.css">
     <title>Hotel Website</title>
 </head>
 
 <body>
-    <header class="header">
-        <a href="index.html" class="logo">Wills Hotel</a>
-        <div class="navigation">
-            <div id="myNav" class="overlay mobile">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                    <a href="index.html" class="menu-link">Home</a>
-                    <a href="about.html" class="menu-link1">About Us</a>
-                    <a href="rooms.html" class="menu-link2">Rooms</a></li>
-                </div>
-            </div>
-            <span onclick="openNav()" class="mobile">&#9776;</span>
-        </div>
-        <nav class="nav">
-            <ul class="desktop">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="rooms.html">Rooms</a></li>
+    <header>
+        <nav class="topnav">
+            <ul>
+                <li> <a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li> <a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+
+                <li> <a href="#">Log Out</a></li>
+                <li> <a href="#">My Page</a></li>
+
             </ul>
         </nav>
+        <div class="header">
+            <a href="index.html" class="logo">Wills Hotel</a>
+
+            <div class="navigation">
+                <div id="myNav" class="overlay mobile">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="index.html" class="menu-link">Home</a>
+                        <a href="about.html" class="menu-link1">About Us</a>
+                        <a href="rooms.html" class="menu-link2">Rooms</a>
+                    </div>
+                </div>
+                <span onclick="openNav()" class="mobile">&#9776;</span>
+            </div>
+            <nav class="nav">
+                <ul class="desktop">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- header Section -->
-
     <section class="home">
         <div class="hero">
-            <h1><span>Wills</span> A Luxury Hotel</h1>
+            <h1>"We Welcome You All At"</h1>
+            <h2>Wills A Luxury Hotel</h2>
             <p>At Wills Hotel, we accommodate people from the whole corners of the wolrd.Everyday we prepare to receive
                 and facilitate people from different cultures both locally and all over the globe.
             </p>
+
         </div>
-        <!-- <div class="booking">
-            <h2>Booking Your Hotel</h2>
-            <form action="#" class="form">
-                <label for="date-in">Check In:</label>
-                <input type="date">
-                <label for="date-in">Check Out:</label>
-                <input type="date">
-                <div class="select">
-                    <label for="guest">Guests:</label>
-                    <select id="guest">
-                        <option value>2 Adults</option>
-                        <option value>3 Adults</option>
-                    </select>
-                    <label for="room">Rooms:</label>
-                    <select id="room">
-                        <option value>1 Room</option>
-                        <option value>2 Rooms</option>
-                    </select>
-                </div>
-                <button type="button" class="button">CHECK AVAILABILITY</button>
-            </form>
-        </div> -->
     </section>
 
-
-    <!-- <div class="trial">
-        <img src="images/bar1.jpg" alt="">
-        <div>
-            <h2>Travel Plan</h2>
-            <h3>Lorem ipsum dolor sit amet,</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna.</p>
-        </div>
-    </div> -->
     <section class="background">
         <h1>Our Rooms</h1>
         <hr>
         <div class="Room-section">
             <div class="Room1">
                 <div class="price">
-                    <h1>Double Rooms</h1>
+                    <h2>Double Rooms</h2>
                     <h3><span>199$</span>/Pernight</h3>
                 </div>
             </div>
             <div class="Room2">
                 <div class="price">
-                    <h1>Premium King Room</h1>
+                    <h2>Premium King Room</h2>
                     <h3><span>159$</span>/Pernight</h3>
                 </div>
             </div>
             <div class="Room3">
                 <div class="price">
-                    <h1>Deluxe Room</h1>
+                    <h2>Deluxe Room</h2>
                     <h3><span>198$</span>/Pernight</h3>
                 </div>
             </div>
             <div class="Room4">
                 <div class="price">
-                    <h1>Family Room</h1>
+                    <h2>Family Room</h2>
                     <h3><span>299$</span>/Pernight</h3>
                 </div>
             </div>
         </div>
-        <h2><a href="#">See More Rooms</a></h2>
-    </section>
-    <section class="work">
-        <h1>Our Services</h1>
-        <hr>
+        <button type="button" class="morebtn"> See More Rooms</button>
+        <h2><a href="#" class="desktop-only">See More Rooms</a></h2>
     </section>
     <!-- Dynamic Section -->
     <section class="services-section">
+        <div class="work">
+            <h1>Our Services</h1>
+            <hr>
+        </div>
         <div class="services">
-            <!-- <div class="container">
-                <img src="images/car.jpg" alt="">
-                <div class="services-item">
-                    <h2>Hire Driver</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna.</p>
-                </div>
-            </div> -->
+
         </div>
 
-        <button type="button" class="seeMore">more</button>
+        <button type="button" class="seeMore">see More</button>
     </section>
     <section class="sponser">
-        <h1>Our Sponsors and Partners</h1>
+        <h1>Our Partners</h1>
         <hr>
         <div class="sponser-image">
             <a href=""><img src="https://promzzykoncepts.github.io/NFT-Conference/images/coinbase.svg" alt=""></a>
@@ -140,30 +117,18 @@
         </div>
     </section>
 
-    <section class="contact-section" id="Contact">
-        <div class="contact-div">
+    <footer>
 
-            <div class="contact">
-                <h1>Wills Hotel</h1>
-
-                <p>We serve and accommodate millions of natives and travelers from all corners of the wolrd per year.
-                </p>
-                <ul class="icons">
-                    <li> <a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li> <a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li> <a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li> <a href="#"><i class="fa-solid fa-envelope"></i></a></li>
-                </ul>
-            </div>
-            <div class="small">
-                <small>CONTACT US</small>
-                <P>+256 70 658 625 <br>info.willshotel@gmail.com <br>Kyengera Central,<br>Wakiso District.</P>
-            </div>
+        <div class="contact">
+            <h1>Wills Hotel</h1>
         </div>
-        <p class="link">Copyright ©2022 All rights reserved | This is a Demo Website and all contacts provided are null
+        <p class="link">Copyright ©2022 All rights reserved | This is a Demo Website and all contacts provided are
+            null
             and void.
-            This website is designed by <a href="kgeorgewilliam60@gmail.com" class="email">Kidde George William</a></p>
-    </section>
+            This website is designed by <a href="kgeorgewilliam60@gmail.com" class="email">Kidde</a>
+        </p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 
