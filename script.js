@@ -98,14 +98,13 @@ Data.forEach((item, index) => {
 });
 
 const service = Array.from(document.querySelectorAll('.container'));
+const moreBtn = document.querySelector('.seeMore');
 
 service.forEach((card, index) => {
   if (index > 1) {
     card.classList.add('hide');
   }
 });
-
-const moreBtn = document.querySelector('.seeMore');
 
 const moreBtnText = (card) => {
   if (card.classList.contains('hide')) {
