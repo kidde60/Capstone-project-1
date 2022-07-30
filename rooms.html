@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=di, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <script src="https://kit.fontawesome.com/fcfd1041d5.js" crossorigin="anonymous">
     </script>
@@ -14,29 +14,38 @@
 
 <body>
     <header>
-        <div class="header">
+        <nav class="topnav">
+            <ul>
+                <li> <a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li> <a href="#"><i class="fa-brands fa-twitter"></i></a></li>
 
-            <a href="#" class="logo">Wills Hotel</a>
-            <nav class="navbar" onclick="myFunction(this)">
-                <span class="bar1"></span>
-                <span class="bar2"></span>
-                <span class="bar3"></span>
-            </nav>
-            <ul class="desktop">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="rooms.html">Rooms</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </div>
-        <nav>
-            <ul class="navbar-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="rooms.html">Rooms</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li> <a href="#">Log Out</a></li>
+                <li> <a href="#">My Page</a></li>
+
             </ul>
         </nav>
+        <div class="header">
+            <a href="index.html" class="logo">Wills Hotel</a>
+
+            <div class="navigation">
+                <div id="myNav" class="overlay mobile">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="index.html" class="menu-link">Home</a>
+                        <a href="about.html" class="menu-link1">About Us</a>
+                        <a href="rooms.html" class="menu-link2">Rooms</a>
+                    </div>
+                </div>
+                <span onclick="openNav()" class="mobile">&#9776;</span>
+            </div>
+            <nav class="nav">
+                <ul class="desktop">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <div class="our">
         <h1>Our Rooms</h1>

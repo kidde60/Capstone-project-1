@@ -14,29 +14,38 @@
 
 <body>
     <header>
-        <div class="header">
+        <nav class="topnav">
+            <ul>
+                <li> <a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li> <a href="#"><i class="fa-brands fa-twitter"></i></a></li>
 
-            <a href="#" class="logo">Wills Hotel</a>
-            <nav class="navbar" onclick="myFunction(this)">
-                <span class="bar1"></span>
-                <span class="bar2"></span>
-                <span class="bar3"></span>
-            </nav>
-            <ul class="desktop">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="rooms.html">Rooms</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </div>
-        <nav>
-            <ul class="navbar-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="rooms.html">Rooms</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li> <a href="#">Log Out</a></li>
+                <li> <a href="#">My Page</a></li>
+
             </ul>
         </nav>
+        <div class="header">
+            <a href="index.html" class="logo">Wills Hotel</a>
+
+            <div class="navigation">
+                <div id="myNav" class="overlay mobile">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="index.html" class="menu-link">Home</a>
+                        <a href="about.html" class="menu-link1">About Us</a>
+                        <a href="rooms.html" class="menu-link2">Rooms</a>
+                    </div>
+                </div>
+                <span onclick="openNav()" class="mobile">&#9776;</span>
+            </div>
+            <nav class="nav">
+                <ul class="desktop">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <div class="our">
         <h1>About Us</h1>
@@ -73,71 +82,50 @@
                 </ul>
             </div>
         </div>
-        <div class="Room-section">
-            <div class="Room5">
-                <div class="price">
-                    <h1>Restaurant Services</h1>
-                </div>
-            </div>
-            <div class="Room6">
-                <div class="price">
-                    <h1>Travel & Camping</h1>
-                </div>
-            </div>
-            <div class="Room7">
-                <div class="price">
-                    <h1>Event & Party</h1>
-                </div>
-            </div>
-        </div>
     </section>
     <section class="work">
-        <small>OUR GALLERY</small>
         <h1>Discover Our Work</h1>
+        <p class="bg3">Built in 2000 during the George William period, this hotel is located in the center of Kyengera,
+            with
+            easy access to the city's tourist attractions. It offers tastefully meals and clearly decorated
+            rooms.</p>
         <div class="image-div">
 
-            <div class="image">
-                <img src="images/family.jpg" alt="">
-                <h1>Luxury Room</h1>
+            <div class=" bg1">
+
+                <h1 class="bg">Family Room</h1>
             </div>
-            <div class="image">
-                <img src="images/delux.jpg" alt="">
-                <h1>Double Room</h1>
-            </div>
-            <div class="image">
-                <img src="images/double.jpg" alt="">
-                <h1>Family Room</h1>
-            </div>
-            <div class="image">
-                <img src="images/premium.jpg" alt="">
-                <h1>Delux Room</h1>
+            <div class=" bg2">
+
+                <h1 class="bg">Delux Room</h1>
             </div>
         </div>
     </section>
-    <section class="contact-section" id="Contact">
-        <div class="contact-div">
 
-            <div class="contact">
-                <h1>Wills Hotel</h1>
 
-                <p>We serve and accommodate millions of natives and travelers from all corners of the wolrd per year.
-                </p>
-                <ul class="icons">
-                    <li> <a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li> <a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li> <a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li> <a href="#"><i class="fa-solid fa-envelope"></i></a></li>
-                </ul>
-            </div>
-            <div class="small">
-                <small>CONTACT US</small>
-                <P>+256 70 658 625 <br>info.willshotel@gmail.com <br>Kyengera Central,<br>Wakiso District.</P>
-            </div>
+    <section class="sponser">
+        <h1>Our Partners</h1>
+        <hr>
+        <div class="sponser-image">
+            <a href=""><img src="https://promzzykoncepts.github.io/NFT-Conference/images/coinbase.svg" alt=""></a>
+            <a href=""><img src="https://promzzykoncepts.github.io/NFT-Conference/images/binance-Logo.png" alt=""></a>
+            <a href=""><img src="https://promzzykoncepts.github.io/NFT-Conference/images/Flow.png" alt=""></a>
+            <a href=""><img src="https://promzzykoncepts.github.io/NFT-Conference/images/moonpaymain.svg" alt=""></a>
         </div>
-        <p class="link">Copyright ©2022 All rights reserved | This is a Demo Website and all contacts provided are null
+    </section>
+
+    <footer>
+
+        <div class="contact">
+            <h1>Wills Hotel</h1>
+        </div>
+        <p class="link">Copyright ©2022 All rights reserved | This is a Demo Website and all contacts provided are
+            null
             and void.
-            This website is designed by <a href="kgeorgewilliam60@gmail.com" class="email">Kidde George William</a></p>
-    </section>
+            This website is designed by <a href="kgeorgewilliam60@gmail.com" class="email">Kidde</a>
+        </p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 
